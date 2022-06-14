@@ -1,0 +1,56 @@
+.header{
+    text-align: center;
+    font-size: 30px;
+}
+body{
+    background-color: blue;
+}
+.grid {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.grid > a,
+.grid > img,
+.grid > a > img {
+    width: 200px;
+    height: auto;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+.text{
+    font-size: 20px;
+    text-align: center;
+}
+.middletext{
+    font-size: 20px;
+}
+@media only screen and (min-width: 600px) {
+    .onlymobile{
+        display: none !important;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .nomobile{
+        display: none !important;
+    }
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px;
+    }
+    .grid2{
+        display: none !important;
+    }
+}
+.clashroyale{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: auto;
+}
